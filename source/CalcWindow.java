@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 /**
  * @author      Anu Malm     <anu.malm@cs.tamk.fi>
  * @version     2018.0924
@@ -10,6 +11,8 @@ public class CalcWindow extends JFrame {
      * Constructor for class CalculatorWindow.
      */
     public CalcWindow() {
+
+        setLayout(new GridLayout(0, 1, 1, 1));
 
         one = new JButton("1");
 
