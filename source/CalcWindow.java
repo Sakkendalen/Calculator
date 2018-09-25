@@ -9,6 +9,7 @@ public class CalcWindow extends JFrame {
      * Constructor for class CalculatorWindow.
      */
     public CalcWindow() {
+        setSize(350,500);
         setVisible(true);
     }
 }
