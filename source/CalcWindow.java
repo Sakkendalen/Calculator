@@ -4,11 +4,11 @@ import javax.swing.*;
  * @version     2018.0924
  * @since       2018.0924
  */
-public class CalculatorWindow extends JFrame {
+public class CalcWindow extends JFrame {
     /**
      * Constructor for class CalculatorWindow.
      */
-    public CalculatorWindow() {
+    public CalcWindow() {
         setVisible(true);
     }
 }
