@@ -11,5 +11,7 @@ public class CalcWindow extends JFrame {
     public CalcWindow() {
         setSize(350,500);
         setVisible(true);
+        // Ends the program when user closes the window
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 }
