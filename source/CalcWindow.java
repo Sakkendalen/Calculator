@@ -14,7 +14,8 @@ public class CalcWindow extends JFrame {
         one = new JButton("1");
 
         add(one);
-        
+
+        setTitle("Calculator 2018");
         setSize(350,500);
         setVisible(true);
 
