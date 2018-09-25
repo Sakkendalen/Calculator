@@ -7,6 +7,7 @@ import java.awt.*;
  */
 public class CalcWindow extends JFrame {
     private JButton one;
+    private JButton two;
     /**
      * Constructor for class CalculatorWindow.
      */
@@ -15,8 +16,10 @@ public class CalcWindow extends JFrame {
         setLayout(new GridLayout(0, 1, 1, 1));
 
         one = new JButton("1");
+        two = new JButton("2");
 
         add(one);
+        add(two);
 
         setTitle("Calculator 2018");
         setSize(350,500);
