@@ -27,20 +27,7 @@ public class CalcWindow extends JFrame {
         setLayout(new GridLayout(4, 4, 1, 1));
 
         createButtons();
-        
-        add(one);
-        add(two);
-        add(three);
-        add(four);
-        add(five);
-        add(six);
-        add(seven);
-        add(eight);
-        add(nine);
-        add(zero);
-        add(plus);
-        add(minus);
-        add(result);
+        addButtons();
 
         setTitle("Calculator 2018");
         setSize(350,500);
@@ -64,5 +51,21 @@ public class CalcWindow extends JFrame {
         plus = new JButton("+");
         minus = new JButton("-");
         result = new JButton("=");
+    }
+
+    private void addButtons() {
+        add(one);
+        add(two);
+        add(three);
+        add(four);
+        add(five);
+        add(six);
+        add(seven);
+        add(eight);
+        add(nine);
+        add(zero);
+        add(plus);
+        add(minus);
+        add(result);
     }
 }
