@@ -12,8 +12,8 @@ public class CalcWindow extends JFrame {
      * Constructor for class CalculatorWindow.
      */
     public CalcWindow() {
-
-        setLayout(new GridLayout(0, 1, 1, 1));
+                        //(rows, cols, hgap, vgap)
+        setLayout(new GridLayout(4, 4, 1, 1));
 
         one = new JButton("1");
         two = new JButton("2");
