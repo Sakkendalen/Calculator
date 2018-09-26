@@ -26,20 +26,8 @@ public class CalcWindow extends JFrame {
                         //(rows, cols, hgap, vgap)
         setLayout(new GridLayout(4, 4, 1, 1));
 
-        one = new JButton("1");
-        two = new JButton("2");
-        three = new JButton("3");
-        four = new JButton("4");
-        five = new JButton("5");
-        six = new JButton("6");
-        seven = new JButton("7");
-        eight = new JButton("8");
-        nine = new JButton("9");
-        zero = new JButton("0");
-        plus = new JButton("+");
-        minus = new JButton("-");
-        result = new JButton("=");
-
+        createButtons();
+        
         add(one);
         add(two);
         add(three);
@@ -60,5 +48,21 @@ public class CalcWindow extends JFrame {
 
         // Ends the program when user closes the window
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+    }
+
+    private void createButtons() {
+        one = new JButton("1");
+        two = new JButton("2");
+        three = new JButton("3");
+        four = new JButton("4");
+        five = new JButton("5");
+        six = new JButton("6");
+        seven = new JButton("7");
+        eight = new JButton("8");
+        nine = new JButton("9");
+        zero = new JButton("0");
+        plus = new JButton("+");
+        minus = new JButton("-");
+        result = new JButton("=");
     }
 }
