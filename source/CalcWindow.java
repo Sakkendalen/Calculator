@@ -36,7 +36,11 @@ public class CalcWindow extends JFrame {
         // Ends the program when user closes the window
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
-
+    /**
+     * Method for creating the buttons needed for a calculator.
+     * 
+     * Helps to make constructor method less cluttered.
+     */
     private void createButtons() {
         one = new JButton("1");
         two = new JButton("2");
