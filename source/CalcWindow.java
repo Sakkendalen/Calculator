@@ -29,7 +29,7 @@ public class CalcWindow extends JFrame {
         outerUI.setBorder(new EmptyBorder(4,4,4,4));
 
                         //(rows, cols, hgap, vgap)
-        setLayout(new GridLayout(4, 4, 1, 1));
+        JPanel panelButtons = new JPanel(new GridLayout(4, 4, 4, 4));
 
         createButtons();
         addButtons();
