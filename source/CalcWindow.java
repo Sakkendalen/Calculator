@@ -37,7 +37,7 @@ public class CalcWindow extends JFrame {
         JPanel panelButtons = new JPanel(new GridLayout(4, 4, 4, 4));
 
         createButtons();
-        addButtons();
+        addButtons(panelButtons);
 
         outerUI.add(panelButtons, BorderLayout.CENTER);
 
@@ -74,19 +74,19 @@ public class CalcWindow extends JFrame {
      * 
      * Helps to make constructor less cluttered.
      */
-    private void addButtons() {
-        add(one);
-        add(two);
-        add(three);
-        add(four);
-        add(five);
-        add(six);
-        add(seven);
-        add(eight);
-        add(nine);
-        add(zero);
-        add(plus);
-        add(minus);
-        add(result);
+    private void addButtons(JPanel panelButtons) {
+        panelButtons.add(one);
+        panelButtons.add(two);
+        panelButtons.add(three);
+        panelButtons.add(four);
+        panelButtons.add(five);
+        panelButtons.add(six);
+        panelButtons.add(seven);
+        panelButtons.add(eight);
+        panelButtons.add(nine);
+        panelButtons.add(zero);
+        panelButtons.add(plus);
+        panelButtons.add(minus);
+        panelButtons.add(result);
     }
 }
