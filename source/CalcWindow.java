@@ -33,8 +33,8 @@ public class CalcWindow extends JFrame {
 
         setContentPane(outerUI);
 
-                        //(rows, cols, hgap, vgap)
-        JPanel panelButtons = new JPanel(new GridLayout(4, 4, 4, 4));
+                                        //(rows, cols, hgap, vgap)
+        JPanel panelButtons = new JPanel(new GridLayout(4, 4, 1, 1));
 
         createButtons();
         addButtons(panelButtons);
@@ -42,7 +42,7 @@ public class CalcWindow extends JFrame {
         outerUI.add(panelButtons, BorderLayout.CENTER);
 
         setTitle("Calculator 2018");
-        setSize(350,500);
+        setSize(300,400);
         setVisible(true);
 
         // Ends the program when user closes the window
