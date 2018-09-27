@@ -1,3 +1,8 @@
+/**
+ * @author      Essi Supponen <essi.supponen@cs.tamk.fi>
+ * @version     2018-0927
+ * @since       2018-0927
+ */
 public class Functions {
     public static double add(double... numbers) {
         return 0;
