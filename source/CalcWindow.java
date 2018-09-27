@@ -25,8 +25,11 @@ public class CalcWindow extends JFrame {
      */
     public CalcWindow() {
 
-        JPanel outerUI = new JPanel(new BorderLayout(5,5));
-        outerUI.setBorder(new EmptyBorder(4,4,4,4));
+        JPanel outerUI = new JPanel(new BorderLayout(5, 5));
+        outerUI.setBorder(new EmptyBorder(4, 4, 4, 4));
+
+        JTextArea screen = new JTextArea(2, 25);
+        outerUI.add(screen, BorderLayout.NORTH);
 
         setContentPane(outerUI);
 
