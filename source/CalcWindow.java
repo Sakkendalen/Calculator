@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.*;
 import java.awt.*;
 /**
  * @author      Anu Malm     <anu.malm@cs.tamk.fi>
@@ -23,6 +24,10 @@ public class CalcWindow extends JFrame {
      * Constructor for class CalculatorWindow.
      */
     public CalcWindow() {
+
+        JPanel outerUI = new JPanel(new BorderLayout(5,5));
+        outerUI.setBorder(new EmptyBorder(4,4,4,4));
+
                         //(rows, cols, hgap, vgap)
         setLayout(new GridLayout(4, 4, 1, 1));
 
