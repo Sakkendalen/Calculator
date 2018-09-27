@@ -28,11 +28,15 @@ public class CalcWindow extends JFrame {
         JPanel outerUI = new JPanel(new BorderLayout(5,5));
         outerUI.setBorder(new EmptyBorder(4,4,4,4));
 
+        setContentPane(outerUI);
+
                         //(rows, cols, hgap, vgap)
         JPanel panelButtons = new JPanel(new GridLayout(4, 4, 4, 4));
 
         createButtons();
         addButtons();
+
+        outerUI.add(panelButtons, BorderLayout.CENTER);
 
         setTitle("Calculator 2018");
         setSize(350,500);
