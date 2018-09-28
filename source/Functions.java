@@ -5,19 +5,27 @@
  */
 public class Functions {
     public static double add(double... numbers) {
-        return 0;
+        double sum = 0;
+
+        return sum;
     }
 
     public static double multiply(double... numbers) {
-        return 0;
+        double product = 0;
+
+        return product;
     }
 
     public static double substract(double originalNumber, double... numbers) {
-        return 0;
+        double difference = originalNumber;
+
+        return difference;
     }
 
     public static double divide(double number, double dividor) {
-        return 0;
+        double quotient = number;
+
+        return quotient;
     }
 
     public static void main(String[] args) {
