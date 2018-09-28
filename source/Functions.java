@@ -7,6 +7,10 @@ public class Functions {
     public static double add(double... numbers) {
         double sum = 0;
 
+        for (double n : numbers) {
+            sum = sum + n;
+        }
+
         return sum;
     }
 
@@ -29,6 +33,9 @@ public class Functions {
     }
 
     public static void main(String[] args) {
-        System.out.println("test");
+        System.out.println("test add");
+        System.out.println(add(1.35, 0.32));
+        System.out.println(add(3, 6, 1, 3, 8, 9));
+        System.out.println(add(3.21, 4));
     }
 }
