@@ -4,6 +4,13 @@
  * @since       2018-0927
  */
 public class Functions {
+
+    /**
+     * Adds given doubles together.
+     *
+     * @param   numbers     array of numbers
+     * @return  sum of all the numbers
+     */
     public static double add(double... numbers) {
         double sum = 0;
 
