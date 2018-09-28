@@ -19,4 +19,8 @@ public class Functions {
     public static double divide(double number, double dividor) {
         return 0;
     }
+
+    public static void main(String[] args) {
+        System.out.println("test");
+    }
 }
