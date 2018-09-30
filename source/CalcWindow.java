@@ -47,7 +47,7 @@ public class CalcWindow extends JFrame {
         setVisible(true);
 
         // Ends the program when user closes the window
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     /**
      * Method for creating the buttons needed for a calculator.
@@ -93,10 +93,8 @@ public class CalcWindow extends JFrame {
         panelButtons.add(three);
 
         panelButtons.add(result);
-        
+
         panelButtons.add(zero);
-
-
 
     }
 }
