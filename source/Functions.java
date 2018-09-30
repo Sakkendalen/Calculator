@@ -22,7 +22,11 @@ public class Functions {
     }
 
     public static double multiply(double... numbers) {
-        double product = 0;
+        double product = 1;
+
+        for (double n : numbers) {
+            product = product * n;
+        }
 
         return product;
     }
@@ -44,5 +48,9 @@ public class Functions {
         System.out.println(add(1.35, 0.32));
         System.out.println(add(3, 6, 1, 3, 8, 9));
         System.out.println(add(3.21, 4));
+        System.out.println("test multiply");
+        System.out.println(multiply(4,5));
+        System.out.println(multiply(3,5.4,8,-1.23));
+        System.out.println(multiply(5,8,0));
     }
 }
