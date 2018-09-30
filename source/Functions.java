@@ -40,6 +40,10 @@ public class Functions {
     public static double substract(double originalNumber, double... numbers) {
         double difference = originalNumber;
 
+        for (double n : numbers) {
+            difference = difference - n;
+        }
+
         return difference;
     }
 
@@ -55,8 +59,12 @@ public class Functions {
         System.out.println(add(3, 6, 1, 3, 8, 9));
         System.out.println(add(3.21, 4));
         System.out.println("test multiply");
-        System.out.println(multiply(4,5));
-        System.out.println(multiply(3,5.4,8,-1.23));
-        System.out.println(multiply(5,8,0));
+        System.out.println(multiply(4, 5));
+        System.out.println(multiply(3, 5.4, 8, -1.23));
+        System.out.println(multiply(5, 8, 0));
+        System.out.println("test substract");
+        System.out.println(substract(10, 2));
+        System.out.println(substract(200, 10, 10, 13));
+        System.out.println(substract(0, 3, 5));
     }
 }
