@@ -20,6 +20,8 @@ public class CalcWindow extends JFrame {
     private JButton plus;
     private JButton minus;
     private JButton result;
+    private JButton clear;
+
     /**
      * Constructor for class CalculatorWindow.
      */
@@ -68,6 +70,7 @@ public class CalcWindow extends JFrame {
         plus = new JButton("+");
         minus = new JButton("-");
         result = new JButton("=");
+        clear = new JButton("C");
     }
 
     /**
@@ -97,6 +100,7 @@ public class CalcWindow extends JFrame {
         panelButtons.add(result);
 
         panelButtons.add(zero);
+        panelButtons.add(clear);
 
     }
 }
