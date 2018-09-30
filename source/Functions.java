@@ -37,6 +37,13 @@ public class Functions {
         return product;
     }
 
+    /**
+     * Substract numbers from an original number.
+     *
+     * @param   originalNumber  original double to substract from
+     * @param   numbers         array of doubles
+     * @return  difference of originalNumber and numbers
+     */
     public static double substract(double originalNumber, double... numbers) {
         double difference = originalNumber;
 
