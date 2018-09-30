@@ -74,6 +74,8 @@ public class CalcWindow extends JFrame {
      * Method for adding all the buttons for a calculator.
      * 
      * Helps to make constructor less cluttered.
+     * 
+     * @param panelButtons      JPanel that manages the buttons.
      */
     private void addButtons(JPanel panelButtons) {
         panelButtons.add(seven);
