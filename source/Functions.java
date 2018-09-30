@@ -21,6 +21,12 @@ public class Functions {
         return sum;
     }
 
+    /**
+     * Multiplies given doubles together.
+     *
+     * @param   numbers     array of doubles
+     * @return  product of all the numbers
+     */
     public static double multiply(double... numbers) {
         double product = 1;
 
