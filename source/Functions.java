@@ -71,22 +71,11 @@ public class Functions {
         return quotient;
     }
 
+    public static double exponent(double number, double exponent) {
+        return 0;
+    }
+
     public static void main(String[] args) {
-        System.out.println("test add");
-        System.out.println(add(1.35, 0.32));
-        System.out.println(add(3, 6, 1, 3, 8, 9));
-        System.out.println(add(3.21, 4));
-        System.out.println("test multiply");
-        System.out.println(multiply(4, 5));
-        System.out.println(multiply(3, 5.4, 8, -1.23));
-        System.out.println(multiply(5, 8, 0));
-        System.out.println("test substract");
-        System.out.println(substract(10, 2));
-        System.out.println(substract(200, 10, 10, 13));
-        System.out.println(substract(0, 3, 5));
-        System.out.println("test divide");
-        System.out.println(divide(4,2));
-        System.out.println(divide(13,7));
-        System.out.println(divide(9,3));
+
     }
 }
