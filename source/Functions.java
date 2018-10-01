@@ -54,10 +54,16 @@ public class Functions {
         return difference;
     }
 
+    /**
+     * Divides first double with the second one.
+     *
+     * @param   number      double to be divided
+     * @param   dividor     double to divide with
+     * @return  the quotient
+     */
     public static double divide(double number, double dividor) {
         if (dividor == 0) {
-            System.out.println("You cannot divide with number 0");
-            throw new ArithmeticException();
+            throw new ArithmeticException("You cannot divide with number 0");
         }
         
         double quotient = number / dividor;
