@@ -55,7 +55,12 @@ public class Functions {
     }
 
     public static double divide(double number, double dividor) {
-        double quotient = number;
+        if (dividor == 0) {
+            System.out.println("You cannot divide with number 0");
+            throw new ArithmeticException();
+        }
+        
+        double quotient = number / dividor;
 
         return quotient;
     }
@@ -73,5 +78,9 @@ public class Functions {
         System.out.println(substract(10, 2));
         System.out.println(substract(200, 10, 10, 13));
         System.out.println(substract(0, 3, 5));
+        System.out.println("test divide");
+        System.out.println(divide(4,2));
+        System.out.println(divide(13,7));
+        System.out.println(divide(9,3));
     }
 }
