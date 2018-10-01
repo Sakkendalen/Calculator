@@ -72,7 +72,17 @@ public class Functions {
     }
 
     public static double exponent(double number, double exponent) {
-        return 0;
+        double result = 1;
+
+        if (exponent > 0) {
+
+        } else if (exponent < 0) {
+
+        }
+
+        // If exponent is 0, the result will always be 1.
+
+        return result;
     }
 
     public static void main(String[] args) {
