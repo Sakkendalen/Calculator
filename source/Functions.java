@@ -75,7 +75,9 @@ public class Functions {
         double result = 1;
 
         if (exponent > 0) {
-
+            for (int i = 1; i <= exponent; i++) {
+                result = result * number;
+            }
         } else if (exponent < 0) {
 
         }
@@ -86,6 +88,9 @@ public class Functions {
     }
 
     public static void main(String[] args) {
-
+        System.out.println("Exponent tests");
+        System.out.println("2^2 = " + exponent(2,2));
+        System.out.println("4^6 = " + exponent(4,6));
+        System.out.println("2.34^3 = " + exponent(2.34,3));
     }
 }
