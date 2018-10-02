@@ -71,6 +71,17 @@ public class Functions {
         return quotient;
     }
 
+    /**
+     * Calculates and returns number to the power of exponent.
+     *
+     * When exponent is positive, uses for-loop to multiply the number by
+     * itself. When exponent is negative, uses the reciprocal of the
+     * number. When exponent is 0, always returns 1.
+     *
+     * @param   number      double to multiply
+     * @param   exponent    int, how many times to multiply number
+     * @return  number to the power of exponent
+     */
     public static double exponent(double number,int exponent) {
         double result = 1;
 
