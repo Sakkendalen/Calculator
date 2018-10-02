@@ -122,6 +122,9 @@ public class CalcWindow extends JFrame implements ActionListener {
     }
 
     public void actionPerformed (ActionEvent e) {
+        if(e.getSource() == one) {
+            screenText += "1";
+        }
 
     }
 
