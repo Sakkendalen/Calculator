@@ -22,6 +22,8 @@ public class CalcWindow extends JFrame {
     private JButton result;
     private JButton clear;
 
+    private String screenText;
+
     /**
      * Constructor for class CalculatorWindow.
      */
@@ -113,7 +115,7 @@ public class CalcWindow extends JFrame {
      * Keeps track of the buttons user presses.
      */
     private void buttonPressCheck() {
-        
+        screenText = "";
     }
 
 
