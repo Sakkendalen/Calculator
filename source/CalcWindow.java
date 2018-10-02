@@ -107,6 +107,11 @@ public class CalcWindow extends JFrame {
 
     }
 
+    /**
+     * Use to send some text to the screen-TextArea.
+     * 
+     * Keeps track of the buttons user presses.
+     */
     private void buttonPressCheck() {
         
     }
