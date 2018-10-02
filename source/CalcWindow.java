@@ -23,6 +23,7 @@ public class CalcWindow extends JFrame {
     private JButton clear;
 
     private String screenText;
+    private TextArea screen;
 
     /**
      * Constructor for class CalculatorWindow.
@@ -32,7 +33,7 @@ public class CalcWindow extends JFrame {
         JPanel outerUI = new JPanel(new BorderLayout(5, 5));
         outerUI.setBorder(new EmptyBorder(4, 4, 4, 4));
 
-        JTextArea screen = new JTextArea(2, 25);
+        screen = new JTextArea(2, 25);
         screen.setEditable(false);
         outerUI.add(screen, BorderLayout.NORTH);
 
