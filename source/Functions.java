@@ -71,7 +71,7 @@ public class Functions {
         return quotient;
     }
 
-    public static double exponent(double number, double exponent) {
+    public static double exponent(double number,int exponent) {
         double result = 1;
 
         if (exponent > 0) {
@@ -79,7 +79,9 @@ public class Functions {
                 result = result * number;
             }
         } else if (exponent < 0) {
-
+            for (int i = 1; i <= -1 * exponent; i++) {
+                result = result * (1/number);
+            }
         }
 
         // If exponent is 0, the result will always be 1.
@@ -89,8 +91,8 @@ public class Functions {
 
     public static void main(String[] args) {
         System.out.println("Exponent tests");
-        System.out.println("2^2 = " + exponent(2,2));
-        System.out.println("4^6 = " + exponent(4,6));
-        System.out.println("2.34^3 = " + exponent(2.34,3));
+        System.out.println("2^2 = " + exponent(2, 2));
+        System.out.println("2^-2 = " + exponent(2, -2));
+        System.out.println("3^4 = " + exponent(3, 4));
     }
 }
