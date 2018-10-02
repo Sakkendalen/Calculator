@@ -46,6 +46,9 @@ public class CalcWindow extends JFrame {
 
         setTitle("Calculator 2018");
         setSize(300,400);
+
+        buttonPressCheck();
+
         setVisible(true);
 
         // Ends the program when user closes the window
@@ -103,4 +106,10 @@ public class CalcWindow extends JFrame {
         panelButtons.add(clear);
 
     }
+
+    private void buttonPressCheck() {
+        
+    }
+
+
 }
