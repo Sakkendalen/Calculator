@@ -1,12 +1,14 @@
 import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
+import java.awt.event.*;
+
 /**
  * @author      Anu Malm     <anu.malm@cs.tamk.fi>
  * @version     2018.0924
  * @since       2018.0924
  */
-public class CalcWindow extends JFrame {
+public class CalcWindow extends JFrame implements ActionListener {
     private JButton one;
     private JButton two;
     private JButton three;
@@ -119,5 +121,8 @@ public class CalcWindow extends JFrame {
         screenText = "";
     }
 
+    public void actionPerformed (ActionEvent e) {
+
+    }
 
 }
