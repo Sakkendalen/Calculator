@@ -120,6 +120,19 @@ public class CalcWindow extends JFrame implements ActionListener {
     private void buttonPressCheck() {
         screenText = "";
         one.addActionListener(this);
+        two.addActionListener(this);
+        three.addActionListener(this);
+        four.addActionListener(this);
+        five.addActionListener(this);
+        six.addActionListener(this);
+        seven.addActionListener(this);
+        eight.addActionListener(this);
+        nine.addActionListener(this);
+        zero.addActionListener(this);
+        minus.addActionListener(this);
+        plus.addActionListener(this);
+        clear.addActionListener(this);
+        result.addActionListener(this);
     }
 
     public void actionPerformed (ActionEvent e) {
