@@ -126,7 +126,7 @@ public class CalcWindow extends JFrame implements ActionListener {
         if(e.getSource() == one) {
             screenText += "1";
         }
-
+        screen.setText(screenText);
     }
 
 }
