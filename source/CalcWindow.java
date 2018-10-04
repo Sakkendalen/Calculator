@@ -138,6 +138,33 @@ public class CalcWindow extends JFrame implements ActionListener {
     public void actionPerformed (ActionEvent e) {
         if(e.getSource() == one) {
             screenText += "1";
+        } else if(e.getSource() == two) {
+            screenText += "2";
+        } else if(e.getSource() == three) {
+            screenText += "3";
+        } else if(e.getSource() == four) {
+            screenText += "4";
+        } else if(e.getSource() == five) {
+            screenText += "5";
+        } else if(e.getSource() == six) {
+            screenText += "6";
+        } else if(e.getSource() == seven) {
+            screenText += "7";
+        } else if(e.getSource() == eight) {
+            screenText += "8";
+        } else if(e.getSource() == nine) {
+            screenText += "9";
+        } else if(e.getSource() == zero) {
+            screenText += "0";
+        } else if(e.getSource() == plus) {
+            screenText += "+";
+        } else if(e.getSource() == minus) {
+            screenText += "-";
+        } else if(e.getSource() == clear) {
+            screenText = "";
+        } else if(e.getSource() == result) {
+            //test functionality
+            screenText += "RESULT";
         }
         screen.setText(screenText);
     }
