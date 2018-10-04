@@ -35,7 +35,7 @@ public class CalcWindow extends JFrame implements ActionListener {
         JPanel outerUI = new JPanel(new BorderLayout(5, 5));
         outerUI.setBorder(new EmptyBorder(4, 4, 4, 4));
 
-        screen = new JTextArea(2, 25);
+        screen = new TextArea(2, 25);
         screen.setEditable(false);
         outerUI.add(screen, BorderLayout.NORTH);
 
