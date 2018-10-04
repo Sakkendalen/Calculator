@@ -119,6 +119,7 @@ public class CalcWindow extends JFrame implements ActionListener {
      */
     private void buttonPressCheck() {
         screenText = "";
+        one.addActionListener(this);
     }
 
     public void actionPerformed (ActionEvent e) {
