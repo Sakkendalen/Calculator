@@ -135,6 +135,14 @@ public class CalcWindow extends JFrame implements ActionListener {
         result.addActionListener(this);
     }
 
+    /**
+     * Java's own listener interface's method for receiving action events.
+     * 
+     * Since this class implements ActionListener, this method is a must. Used to 
+     * handle button presses.
+     * 
+     * @param e             Event that occurs, like mouse click.
+     */
     public void actionPerformed (ActionEvent e) {
         if(e.getSource() == one) {
             screenText += "1";
