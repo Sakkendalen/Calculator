@@ -101,7 +101,24 @@ public class Functions {
     }
 
     public static double sqrt(double number) {
-        return 0;
+        double min = 0;
+        double max = number;
+        double root = max/2;
+        boolean found = false;
+
+        while(!found) {
+            if (root*root >= number * 1.000001) {
+                max = root;
+                root = (max+min)/2;
+            } else if (root*root <= number * 0.999999) {
+                min = root;
+                root = (max+min)/2;
+            } else {
+                found = true;
+            }
+        }
+
+        return root;
     }
 
     public static void main(String[] args) {
@@ -109,5 +126,9 @@ public class Functions {
         System.out.println("2^2 = " + exponent(2, 2));
         System.out.println("2^-2 = " + exponent(2, -2));
         System.out.println("3^4 = " + exponent(3, 4));
+        System.out.println("Squareroot tests");
+        System.out.println("sqrt(16) = " + sqrt(16));
+        System.out.println("sqrt(4) = " + sqrt(4));
+        System.out.println("sqrt(8) = " + sqrt(8));
     }
 }
