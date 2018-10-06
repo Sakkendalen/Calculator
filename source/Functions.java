@@ -100,6 +100,10 @@ public class Functions {
         return result;
     }
 
+    public static double sqrt(double number) {
+        return 0;
+    }
+
     public static void main(String[] args) {
         System.out.println("Exponent tests");
         System.out.println("2^2 = " + exponent(2, 2));
