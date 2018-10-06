@@ -100,14 +100,28 @@ public class Functions {
         return result;
     }
 
+    /**
+     * Finds and returns the square root of given number.
+     *
+     * If number is negative, throws an exception. Uses while-loops and min
+     * and max values to find the root. Does this slightly differently
+     * depending if the number is between 0 - 1 or over 1. If number is
+     * 1 or 0, just returns 1 or 0.
+     *
+     * @param   number      number to find the root of
+     * @return  square root of number
+     */
     public static double sqrt(double number) {
         double min;
         double max;
         double root;
         boolean found = false;
-        
+
         if (number < 0) {
-            throw new ArithmeticException("You cannot get square root of a negative number.");
+            throw new ArithmeticException("You cannot get square root" +
+                " of a negative number.");
+        } else if (number == 0) {
+            root = 0;
         } else if (number > 1) {
             min = 0;
             max = number;
@@ -124,7 +138,7 @@ public class Functions {
                     found = true;
                 }
             }
-        } else if (number < 1) {
+        } else if (number < 1 && number > 0) {
             min = number;
             max = 1;
             root = (max + min) / 2;
@@ -145,16 +159,5 @@ public class Functions {
         }
 
         return root;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Exponent tests");
-        System.out.println("2^2 = " + exponent(2, 2));
-        System.out.println("2^-2 = " + exponent(2, -2));
-        System.out.println("3^4 = " + exponent(3, 4));
-        System.out.println("Squareroot tests");
-        System.out.println("sqrt(16) = " + sqrt(16));
-        System.out.println("sqrt(4) = " + sqrt(4));
-        System.out.println("sqrt(0.25) = " + sqrt(0.25));
     }
 }
