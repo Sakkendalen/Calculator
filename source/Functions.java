@@ -101,21 +101,47 @@ public class Functions {
     }
 
     public static double sqrt(double number) {
-        double min = 0;
-        double max = number;
-        double root = max/2;
+        double min;
+        double max;
+        double root;
         boolean found = false;
+        
+        if (number < 0) {
+            throw new ArithmeticException("You cannot get square root of a negative number.");
+        } else if (number > 1) {
+            min = 0;
+            max = number;
+            root = max/2;
 
-        while(!found) {
-            if (root*root >= number * 1.000001) {
-                max = root;
-                root = (max+min)/2;
-            } else if (root*root <= number * 0.999999) {
-                min = root;
-                root = (max+min)/2;
-            } else {
-                found = true;
+            while(!found) {
+                if (root*root >= number * 1.000001) {
+                    max = root;
+                    root = (max+min)/2;
+                } else if (root*root <= number * 0.999999) {
+                    min = root;
+                    root = (max+min)/2;
+                } else {
+                    found = true;
+                }
             }
+        } else if (number < 1) {
+            min = number;
+            max = 1;
+            root = (max + min) / 2;
+
+            while(!found) {
+                if (root*root >= number * 1.000001) {
+                    max = root;
+                    root = (max + min) / 2;
+                } else if (root*root <= number * 0.999999) {
+                    min = root;
+                    root = (max + min) / 2;
+                } else {
+                    found = true;
+                }
+            }
+        } else {
+            root = 1;
         }
 
         return root;
@@ -129,6 +155,6 @@ public class Functions {
         System.out.println("Squareroot tests");
         System.out.println("sqrt(16) = " + sqrt(16));
         System.out.println("sqrt(4) = " + sqrt(4));
-        System.out.println("sqrt(8) = " + sqrt(8));
+        System.out.println("sqrt(0.25) = " + sqrt(0.25));
     }
 }
