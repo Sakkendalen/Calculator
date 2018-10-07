@@ -1,12 +1,14 @@
 import javax.swing.*;
 import javax.swing.border.*;
 import java.awt.*;
+import java.awt.event.*;
+
 /**
  * @author      Anu Malm     <anu.malm@cs.tamk.fi>
  * @version     2018.0924
  * @since       2018.0924
  */
-public class CalcWindow extends JFrame {
+public class CalcWindow extends JFrame implements ActionListener {
     private JButton one;
     private JButton two;
     private JButton three;
@@ -22,6 +24,9 @@ public class CalcWindow extends JFrame {
     private JButton result;
     private JButton clear;
 
+    private String screenText;
+    private TextArea screen;
+
     /**
      * Constructor for class CalculatorWindow.
      */
@@ -30,7 +35,7 @@ public class CalcWindow extends JFrame {
         JPanel outerUI = new JPanel(new BorderLayout(5, 5));
         outerUI.setBorder(new EmptyBorder(4, 4, 4, 4));
 
-        JTextArea screen = new JTextArea(2, 25);
+        screen = new TextArea(2, 25);
         screen.setEditable(false);
         outerUI.add(screen, BorderLayout.NORTH);
 
@@ -46,6 +51,9 @@ public class CalcWindow extends JFrame {
 
         setTitle("Calculator 2018");
         setSize(300,400);
+
+        buttonPressCheck();
+
         setVisible(true);
 
         // Ends the program when user closes the window
@@ -103,4 +111,70 @@ public class CalcWindow extends JFrame {
         panelButtons.add(clear);
 
     }
+
+    /**
+     * Use to send some text to the screen-TextArea.
+     * 
+     * Keeps track of the buttons user presses.
+     */
+    private void buttonPressCheck() {
+        screenText = "";
+        one.addActionListener(this);
+        two.addActionListener(this);
+        three.addActionListener(this);
+        four.addActionListener(this);
+        five.addActionListener(this);
+        six.addActionListener(this);
+        seven.addActionListener(this);
+        eight.addActionListener(this);
+        nine.addActionListener(this);
+        zero.addActionListener(this);
+        minus.addActionListener(this);
+        plus.addActionListener(this);
+        clear.addActionListener(this);
+        result.addActionListener(this);
+    }
+
+    /**
+     * Java's own listener interface's method for receiving action events.
+     * 
+     * Since this class implements ActionListener, this method is a must. Used to 
+     * handle button presses.
+     * 
+     * @param e             Event that occurs, like mouse click.
+     */
+    public void actionPerformed (ActionEvent e) {
+        if(e.getSource() == one) {
+            screenText += "1";
+        } else if(e.getSource() == two) {
+            screenText += "2";
+        } else if(e.getSource() == three) {
+            screenText += "3";
+        } else if(e.getSource() == four) {
+            screenText += "4";
+        } else if(e.getSource() == five) {
+            screenText += "5";
+        } else if(e.getSource() == six) {
+            screenText += "6";
+        } else if(e.getSource() == seven) {
+            screenText += "7";
+        } else if(e.getSource() == eight) {
+            screenText += "8";
+        } else if(e.getSource() == nine) {
+            screenText += "9";
+        } else if(e.getSource() == zero) {
+            screenText += "0";
+        } else if(e.getSource() == plus) {
+            screenText += "+";
+        } else if(e.getSource() == minus) {
+            screenText += "-";
+        } else if(e.getSource() == clear) {
+            screenText = "";
+        } else if(e.getSource() == result) {
+            //test functionality
+            screenText += "RESULT";
+        }
+        screen.setText(screenText);
+    }
+
 }
