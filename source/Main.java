@@ -5,6 +5,11 @@
  */
 
 public class Main {
+
+    /**
+     * Program start
+    */
+
     public static void main(String[] args) {
 
         CalcWindow window = new CalcWindow();
