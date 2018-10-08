@@ -172,6 +172,15 @@ public class CalcWindow extends JFrame implements ActionListener {
             screenText = "";
         } else if(e.getSource() == result) {
             //test functionality
+            String [] calculation = screenText.split("");
+            int [] numbers = new int[calculation.length];
+            for(int i = 0; i<calculation.length; i++){
+                try{
+                    Integer.parseInt(calculation[i]);
+                }catch(Exception notInt){
+                    System.out.println("Not an int");
+                }
+            }
             screenText += "RESULT";
         }
         screen.setText(screenText);
