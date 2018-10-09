@@ -41,9 +41,13 @@ public class ScreenToResult {
                     System.out.println("Not an int");
                 }
             }
+            else{
+                numbers[i] = -1;
+            }
         }
 
         return result;
+        
     }
 
 }
