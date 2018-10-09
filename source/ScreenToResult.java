@@ -1,3 +1,9 @@
+/**
+ * @author
+ * @version
+ * @since
+ */
+
 public class ScreenToResult {
 
     Functions functions;
