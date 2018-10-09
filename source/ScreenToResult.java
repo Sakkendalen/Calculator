@@ -7,7 +7,7 @@
 public class ScreenToResult {
 
     Functions functions;
-    String result;
+    static String result;
 
     /**
      * Constructor
@@ -24,8 +24,17 @@ public class ScreenToResult {
      * Method that calculates data from screen to final result
      */
 
-    public String calculate(String input) {
+    public static String calculate(String [] input) {
 
+        String [] calculation = input;
+
+        for(int i = 0; i<calculation.length; i++){
+            try{
+                Integer.parseInt(calculation[i]);
+            }catch(Exception notInt){
+                System.out.println("Not an int");
+            }
+        }
 
         return result;
     }
