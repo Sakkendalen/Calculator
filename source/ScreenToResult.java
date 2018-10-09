@@ -19,6 +19,11 @@ public class ScreenToResult {
 
     }
 
+
+    /**
+     * Method that calculates data from screen to final result
+     */
+
     public String calculate(String input) {
 
 
