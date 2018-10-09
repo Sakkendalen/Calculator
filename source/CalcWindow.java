@@ -174,7 +174,7 @@ public class CalcWindow extends JFrame implements ActionListener {
             //test functionality
             String [] calculation = screenText.split("");
             ScreenToResult.calculate(calculation);
-            screenText += "RESULT";
+            screenText += " = " + ScreenToResult.calculate(calculation);
         }
         screen.setText(screenText);
     }
