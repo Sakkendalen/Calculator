@@ -29,9 +29,6 @@ public class ScreenToResult {
         String [] calculation = input;
         int [] numbers = new int[calculation.length];
 
-        System.out.println(calculation.length);
-        System.out.println(numbers.length);
-
         for(int i = 0; i<calculation.length; i++){
             if(calculation[i].matches(".*\\d+.*")){
                 try{
@@ -47,7 +44,7 @@ public class ScreenToResult {
         }
 
         return result;
-        
+
     }
 
 }
