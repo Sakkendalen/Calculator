@@ -9,6 +9,10 @@ public class ScreenToResult {
     Functions functions;
     String result;
 
+    /**
+     * Constructor
+     */
+
     public ScreenToResult() {
 
         functions = new Functions();
