@@ -27,8 +27,6 @@ public class CalcWindow extends JFrame implements ActionListener {
     private String screenText;
     private TextArea screen;
 
-    private ScreenToResult result;
-
     /**
      * Constructor for class CalculatorWindow.
      */
@@ -60,8 +58,6 @@ public class CalcWindow extends JFrame implements ActionListener {
 
         // Ends the program when user closes the window
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        result = new ScreenToResult();
     }
     /**
      * Method for creating the buttons needed for a calculator.

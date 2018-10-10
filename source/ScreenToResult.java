@@ -6,7 +6,6 @@
 
 public class ScreenToResult {
 
-    Functions functions;
     static String result;
 
     /**
@@ -14,8 +13,6 @@ public class ScreenToResult {
      */
 
     public ScreenToResult() {
-
-        functions = new Functions();
 
     }
 
