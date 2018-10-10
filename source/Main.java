@@ -13,8 +13,6 @@ public class Main {
     public static void main(String[] args) {
 
         CalcWindow window = new CalcWindow();
-        Functions functions = new Functions();
-        ScreenToResult result = new ScreenToResult();
 
     }
 }
