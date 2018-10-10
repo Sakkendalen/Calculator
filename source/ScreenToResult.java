@@ -31,8 +31,8 @@ public class ScreenToResult {
             if(calculation[i].matches(".*\\d+.*")){
                 try{
                     numbers[i] = Double.parseDouble(calculation[i]);
-                }catch(Exception notInt){
-                    System.out.println("Not an int");
+                }catch(Exception notDouble){
+                    System.out.println("Cannot be converted to double");
                 }
             }
             else{
